@@ -24,7 +24,7 @@ def predict():
 def root():
     """Root endpoint with API information."""
     return jsonify({
-        "name": "Inference API1",
+        "name": "Inference API1dsf",
         "version": os.getenv("APP_VERSION", "1.0.0"),
         "endpoints": ["/health", "/predict"]
     })
