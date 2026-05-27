@@ -7,7 +7,7 @@ app = Flask(__name__)
 def health():
     """Health check endpoint for container orchestrators."""
     return jsonify({
-        "status": "healthy-new-4",
+        "status": "healthy-new-5",
         "version": os.getenv("APP_VERSION", "1.0.0")
     })
 
@@ -15,7 +15,7 @@ def health():
 def predict():
     """Simulated inference endpoint."""
     return jsonify({
-        "prediction": "sample-result-new-4",
+        "prediction": "sample-result-new-5",
         "confidence": 0.95,
         "model_version": os.getenv("MODEL_VERSION", "v1")
     })
@@ -24,7 +24,7 @@ def predict():
 def root():
     """Root endpoint with API information."""
     return jsonify({
-        "name": "Inference-new-4",
+        "name": "Inference-new-5",
         "version": os.getenv("APP_VERSION", "1.0.0"),
         "endpoints": ["/health", "/predict"]
     })
